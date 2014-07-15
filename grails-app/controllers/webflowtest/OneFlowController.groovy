@@ -6,7 +6,9 @@ class OneFlowController {
 
     def stepOneFlow = {
     	firstStep {
-
+    		on('success').to(
+                'fillIdentificationInformation'
+            )
     	}
     }
 }
